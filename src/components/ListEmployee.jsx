@@ -91,15 +91,16 @@ const ListEmployee = () => {
         alignItems: "center",
         minHeight: "calc(100vh - 100px)",
         flexDirection: "column",
-        // Adjust for header and footer space
+        // Adjust for header and footer space\
       }}
     >
       <Paper
         sx={{
           maxHeight: "100%", // Adjust to fit your content
-          width: "50%", // Set the width you want
-          maxWidth: "1000px", // Optional max width for responsiveness
+          // width: "50%", // Set the width you want
+          // maxWidth: "1500px", // Optional max width for responsiveness
           margin: "auto",
+          
         }}
       >
         <Link to="/add-employee">
@@ -107,7 +108,7 @@ const ListEmployee = () => {
             Add Employee
           </Button>
         </Link>
-        <DataGrid rows={employees} columns={columns} sx={{ height: "500px" }} />
+        <DataGrid rows={employees} columns={columns} sx={{ height: "300px" }}  />
       </Paper>
       <Snackbar
         anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
